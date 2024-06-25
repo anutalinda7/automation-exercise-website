@@ -7,6 +7,7 @@ export const randomLastName = faker.person.lastName();
 export const randomEmail = faker.internet.email();
 export const permanentEmail = 'Doris78@yahoo.com';
 export const signupPassword = 'Password123';
+export const randomCardNumber = faker.finance.creditCardNumber();
 export const randomDay = faker.datatype.number({min: 1, max: 28});
 export const randomStreet = faker.location.street();
 export const randomState = faker.location.state();

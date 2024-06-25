@@ -16,8 +16,12 @@ describe(('Product Search'), () => {
     })
 
     it('Filter search results by category, price, etc.', () => {
-      cy.get('.panel-title').find('a').eq(0).click();
-      cy.get('.panel-body').find('a').eq(0).click();
+      cy.get(selector.filterTitlePanel).find('a').eq(0).click();
+      cy.get(selector.filterBodyPanel).find('a').eq(0).click();
       cy.contains('Women - Dress Products').should('be.visible').and('have.text', 'Women - Dress Products')
+
+      // cy.contains('Women - Dress Products').should('be.visible').then(label => {
+      //   expect(label.text().trim()).to.equal('Women - Dress Products')
+      // })
 })
 })

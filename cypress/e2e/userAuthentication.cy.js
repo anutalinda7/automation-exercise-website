@@ -1,5 +1,6 @@
 import { url, randomName, randomEmail, signupPassword, randomDay, randomLastName, randomStreet, randomState, randomCity, randomZipCode, randomPhoneNumber, permanentEmail } from "./shared/dataPage"
 import selector from "./shared/selectorsPage"
+import { login, loginIn } from "./shared/functions";
 
 const monthArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July',  'August', 'September', 'October', 'November', 'December'];
 const countryArray = ['India', 'United States', 'Canada', 'Australia', 'Israel', 'New Zealand', 'Singapore'];
@@ -23,13 +24,6 @@ describe('User Authentication', () => {
     cy.get(selector.singupEmail).type(email);
     cy.get(selector.signupBtn).click();
 }
-  const login = (email, password) => {
-    navigateToSignUpLogin();
-    cy.get(selector.loginEmail).type(email);
-    cy.get(selector.loginPassword).type(password);
-    cy.get(selector.loginBtn).click();
-    cy.wait(2000);
-  }
 
   it('Sing up with valid credentials', () => {
     signUp(randomName, randomEmail)

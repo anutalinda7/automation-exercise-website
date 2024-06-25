@@ -33,6 +33,10 @@ export default {
     btnSubmitSearch: '#submit_search',
     searchProductNameTag: '.productinfo p',
 
+    viewProductDetails: `[href="/product_details/1"]`,
+    productDetailsAvailability: ':nth-child(6) > b',
+    productDetailsAvailabilityValue: '.product-information > :nth-child(6)',
+    btnAddProductFromDetailsPage: '.btn.btn-default.cart',
     addFirstProductInTheCart: '[data-product-id="1"]',
 
     addSecondProductInTheCart: '[data-product-id="2"]',
@@ -41,7 +45,19 @@ export default {
 
     btnContinueShopping: '.btn.btn-success.close-modal.btn-block',
     informCartIsEmpty: '#empty_cart b',
-    cartItemsQuantities: 'tbody tr'
+    cartItemsQuantities: 'tbody tr',
+    filterTitlePanel: '.panel-title',
+    filterBodyPanel: '.panel-body',
+
+    btnCheckout: '.check_out',
+    loginFromCart: '.modal-body a',
+    nameOnCard: '[data-qa="name-on-card"]',
+    cardNumber: '[data-qa="card-number"]',
+    cvcData: '[data-qa="cvc"]',
+    expirationDate: '[data-qa="expiry-month"]',
+    expirationYear: '[data-qa="expiry-year"]',
+    btnsubmitOrder: '.submit-button',
+    labelOrderPlaced: '[data-qa="order-placed"]',
 
 
 
